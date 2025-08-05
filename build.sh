@@ -14,3 +14,5 @@ cargo tauri build
 
 mkdir -p ../built
 cp -r src-tauri/target/release/bundle/deb/*.deb ../built/
+
+echo "version=$(cat src-tauri/tauri.conf.json | grep "version" | sed -n 's/.*"version": *"\([^"]*\)".*/\1/p')" >> $GITHUB_ENV
