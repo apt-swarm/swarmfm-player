@@ -36,4 +36,4 @@ jobs:
         with:
           tag: ${{ env.version }}
           artifacts: "built/*.deb"
-          body: "This is the release of the latest build of A Neuro Who Can't Sing. It is completely automated and isnt tested, so good luck!"
+          body: "This is the release of the latest build of Swarmfm Player. It is completely automated and isnt tested, so good luck!"
